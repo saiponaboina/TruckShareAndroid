@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/driver"
+            android:checked="false"
+            android:title="Home " />
+
+        <item
+            android:id="@+id/MyJobs"
+            android:checked="false"
+            android:title="My Jobs" />
+
+        <item
+            android:id="@+id/Request"
+            android:checked="false"
+            android:title="Request" />
+
+        <item
+            android:id="@+id/CreditInfo"
+            android:checked="false"
+            android:title="Credit Info" />
+
+        <item
+            android:id="@+id/Profile"
+            android:checked="false"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:title="Logout" />
+
+
+
+    </group>
+</menu>

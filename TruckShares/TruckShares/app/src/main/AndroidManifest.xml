@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ritul.truckshare">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".Server.RSMIT"
+        android:allowBackup="true"
+        android:icon="@drawable/shipped"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ritul.truckshare.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
+        <activity
+            android:name="com.ritul.truckshare.HomeActivity"
+            android:label=""
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.CraditCardActivity"
+            android:label="@string/title_activity_cradit_card"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.ProfilePictureActivity"
+            android:label="@string/title_activity_profile_picture"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.DriverLicenseActivity"
+            android:label="@string/title_activity_driver_license"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.TruckActivity"
+            android:label="@string/title_activity_truck"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.InsuranceActivity"
+            android:label="@string/title_activity_insurance"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.ConfirmActivity"
+            android:label=""
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.BackgroundCheckActivity"
+            android:label="@string/title_activity_background_check"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.SelectTruckActivity"
+            android:label="@string/title_activity_select_truck"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.TruckSizeActivity"
+            android:label="@string/title_activity_truck_size"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.SuccessLoginActivity"
+            android:label=""
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.ritul.truckshare.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name="com.ritul.truckshare.RegisterActivity.BankInformation"
+            android:label="@string/title_activity_bank_information"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7d22ba883f7288dc86df6ef52de1e16e163ecf21" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBtToolVRQrR-Y--2s3ac0vnrq1HzuoNog" />
+
+    </application>
+
+</manifest>

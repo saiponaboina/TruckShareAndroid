@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/unit_10dp"
+        android:src="@drawable/shipped"
+        app:border_color="#FF000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:background="@drawable/textborder
+        android:scaleType="fitXY""
+        />-->
+
+    <!--<ImageView
+        android:id="@+id/profile_image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shipped"/>-->
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Andrew Bucks"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/unit_5dp"
+        android:gravity=""
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unit_1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/username"/>
+</RelativeLayout>

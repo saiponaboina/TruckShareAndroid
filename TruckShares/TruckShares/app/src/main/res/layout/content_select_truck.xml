@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgTruck1"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck1"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imgTruck2"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck2"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@+id/BtnCapture2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgTruck3"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck3"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imgTruck4"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck4"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgTruck5"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck5"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imgTruck6"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck6"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgTruck7"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck7"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imgTruck8"
+                    android:layout_width="177dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textborder"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgTruck8"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/BtnUpload8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Upload"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/BtnCapture8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgProfile1"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@+id/BtnBrowse"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_theme"
+                        android:text="Capture"
+                        android:textAllCaps="false"
+                        android:textColor="@color/BackColor"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
